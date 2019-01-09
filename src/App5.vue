@@ -1,23 +1,23 @@
 <template>
   <div id="app">
     <Mouse>
-      <Color slot-scope="{ x, y}" :x=x :y=y>
-        <Position v-if="x > 500" slot-scope="{ x, y}" :x=x :y=y />
-      </Color>
+      <ColorSlot slot-scope="{ x, y }" :x=x :y=y>
+        <Position v-if="x == 1" slot-scope="{ x, y }" :x=x :y=y />
+      </ColorSlot>
     </Mouse>
   </div>
 </template>
 
 <script>
 import Mouse from './components/4/Mouse.vue';
-import Color from './components/4/Color.vue'
+import ColorSlot from './components/4/ColorSlot.vue'
 import Position from './components/4/Position.vue'
 
 export default {
   name: 'app',
   components: {
     Mouse,
-    Color,
+    ColorSlot,
     Position
   }
 }
