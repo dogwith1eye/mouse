@@ -1,16 +1,20 @@
 <template>
-  <div id="app" style="{ height: '100vh' }">
-    <Color />
+  <div id="app">
+    <Mouse>
+      <Position slot-scope="{ x, y}" :x=x :y=y />
+    </Mouse>
   </div>
 </template>
 
 <script>
-import Color from './components/1/Color.vue'
+import Mouse from './components/4/Mouse.vue'
+import Position from './components/4/Position.vue'
 
 export default {
   name: 'app',
   components: {
-    Color
+    Mouse,
+    Position
   }
 }
 </script>
@@ -23,7 +27,7 @@ h1 { margin:0; }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  Color: #2c3e50;
+  color: #2c3e50;
   margin: 0px;
 }
 </style>
