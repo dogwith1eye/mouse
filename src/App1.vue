@@ -1,16 +1,16 @@
 <template>
   <div id="app" style="{ height: '100vh' }">
-    <Color />
+    <Position />
   </div>
 </template>
 
 <script>
-import Color from './components/1/Color.vue'
+import Position from './components/1/Position.vue'
 
 export default {
   name: 'app',
   components: {
-    Color
+    Position
   }
 }
 </script>
@@ -23,7 +23,7 @@ h1 { margin:0; }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  Color: #2c3e50;
+  color: #2c3e50;
   margin: 0px;
 }
 </style>
