@@ -1,5 +1,6 @@
 <template>
   <div :style="{ height: '100vh', backgroundColor: backgroundColor }">
+    <slot :x="x" :y="y" />
   </div>
 </template>
 
