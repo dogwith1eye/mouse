@@ -1,15 +1,23 @@
 <template>
-  <div id="app" style="{ height: '100vh' }">
-    <Position />
+  <div id="app">
+    <Mouse>
+      <Color slot-scope="{ x, y }" :x="x" :y="y">
+        <Position slot-scope="{ x, y }" :x="x" :y="y" />
+      </Color>
+    </Mouse>
   </div>
 </template>
 
 <script>
-import Position from './components/1/Position.vue'
+import Mouse from './components/4/Mouse.vue';
+import Color from './components/4/Color.vue'
+import Position from './components/4/Position.vue'
 
 export default {
   name: 'app',
   components: {
+    Mouse,
+    Color,
     Position
   }
 }
